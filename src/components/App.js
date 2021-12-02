@@ -20,14 +20,25 @@ const useCounter = () => {
 };
 
 const App = () => {
-  const { counter, increase, decrement, reset } = useCounter();
+  // const { counter, increase, decrement, reset } = useCounter();
+
+  const counterBlack = useCounter();
+  const counterYellow = useCounter();
 
   return (
     <div>
-      <div>{counter}</div>
-      <button onClick={increase}>+</button>
-      <button onClick={decrement}>-</button>
-      <button onClick={reset}>Reset</button>
+      <div>
+        <div>{counterBlack.counter}</div>
+        <button onClick={counterBlack.increase}>+</button>
+        <button onClick={counterBlack.decrement}>-</button>
+        <button onClick={counterBlack.reset}>Reset</button>
+      </div>
+      <div>
+        <div>{counterYellow.counter}</div>
+        <button onClick={counterYellow.increase}>+</button>
+        <button onClick={counterYellow.decrement}>-</button>
+        <button onClick={counterYellow.reset}>Reset</button>
+      </div>
     </div>
   );
 };
