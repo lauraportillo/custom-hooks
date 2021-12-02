@@ -1,5 +1,7 @@
 // React
 import React, { useState } from 'react';
+// Components
+import BlackCounter from './BlackCounter';
 // Styles
 import '../stylesheets/App.scss';
 
@@ -27,6 +29,7 @@ const App = () => {
 
   return (
     <div>
+      <BlackCounter />
       <div>
         <div>{counterBlack.counter}</div>
         <button onClick={counterBlack.increase}>+</button>
