@@ -2,6 +2,7 @@
 import { useCounter } from '../hooks/useCounter';
 // Components
 import BlackCounter from './BlackCounter';
+import YellowCounter from './YellowCounter';
 // Styles
 import '../stylesheets/App.scss';
 
@@ -12,6 +13,7 @@ const App = () => {
   return (
     <div>
       <BlackCounter />
+      <YellowCounter />
       <div>
         <div>{counterBlack.counter}</div>
         <button onClick={counterBlack.increase}>+</button>
