@@ -1,5 +1,5 @@
 .yellow {
-  background-color: pink;
+  background-color: #b8b8b9;
   margin-top: 50px;
   padding: 20px;
   display: flex;
@@ -11,8 +11,13 @@
 .yellow__title {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
+  color: grey;
 }
 .yellow__counter {
+  font-size: 40px;
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom: 18px;
+  color: #ffe81f;
 }
 .yellow__btns {
 }
