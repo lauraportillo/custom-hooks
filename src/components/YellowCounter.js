@@ -8,7 +8,7 @@ const YellowCounter = (props) => {
   const counter = useCounter(20);
   return (
     <>
-      <div>Hola soy un contador Amarillo</div>
+      <h2>Yellow counter</h2>
       <div>
         <div>{counter.counter}</div>
         <button onClick={counter.increase}>+</button>

@@ -8,7 +8,7 @@ const BlackCounter = (props) => {
   const { counter, increase, decrement, reset } = useCounter(10);
   return (
     <>
-      <div>Hola soy un contador negro</div>
+      <h2>Black counter</h2>
       <div>
         <div>{counter}</div>
         <button onClick={increase}>+</button>
