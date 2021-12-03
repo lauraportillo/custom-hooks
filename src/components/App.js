@@ -1,29 +1,11 @@
 // React
-import React, { useState } from 'react';
+import { useCounter } from '../hooks/useCounter';
 // Components
 import BlackCounter from './BlackCounter';
 // Styles
 import '../stylesheets/App.scss';
 
-// My Custom Hook
-const useCounter = () => {
-  //state
-  const [counter, setCounter] = useState(0);
-
-  const increase = () => setCounter(counter + 1);
-  const decrement = () => setCounter(counter - 1);
-  const reset = () => setCounter(0);
-  return {
-    counter,
-    increase,
-    decrement,
-    reset,
-  };
-};
-
 const App = () => {
-  // const { counter, increase, decrement, reset } = useCounter();
-
   const counterBlack = useCounter();
   const counterYellow = useCounter();
 
