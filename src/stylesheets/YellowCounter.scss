@@ -1,0 +1,28 @@
+.yellow {
+  background-color: pink;
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.yellow__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+.yellow__counter {
+}
+.yellow__btns {
+}
+.yellow__btns--item {
+  background-color: #ffe81f;
+  color: black;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin: 2px;
+  cursor: pointer;
+}

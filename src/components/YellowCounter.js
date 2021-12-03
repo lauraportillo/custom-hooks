@@ -7,15 +7,21 @@ import '../stylesheets/YellowCounter.scss';
 const YellowCounter = (props) => {
   const counter = useCounter(20);
   return (
-    <>
-      <h2>Yellow counter</h2>
-      <div>
-        <div>{counter.counter}</div>
-        <button onClick={counter.increase}>+</button>
-        <button onClick={counter.decrement}>-</button>
-        <button onClick={counter.reset}>Reset</button>
+    <section className="yellow">
+      <h2 className="yellow__title">Yellow counter</h2>
+      <div className="yellow__counter">{counter.counter}</div>
+      <div className="yellow__btns">
+        <button className="yellow__btns--item" onClick={counter.increase}>
+          +
+        </button>
+        <button className="yellow__btns--item" onClick={counter.decrement}>
+          -
+        </button>
+        <button className="yellow__btns--item" onClick={counter.reset}>
+          Reset
+        </button>
       </div>
-    </>
+    </section>
   );
 };
 
